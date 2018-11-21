@@ -2,12 +2,8 @@
 
 function choose_even(collection) {
 
-  var result = [];
-  collection.forEach(function(element){
-	  if(element % 2 === 0)
-		  result.push(element);
-  });
-  return result;
+  return collection.filter(c => (c%2===0))
+  
 }
 
 module.exports = choose_even;
